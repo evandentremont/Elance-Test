@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+Route::get('/questions/{QuestionID}', 'BaseController@show');
+Route::get('/questions', 'BaseController@index');
